@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Juices Shop</title>
+    <link rel="stylesheet" href="style.css">
+     <!--Css interno --> <!--<style> 
+        body {
+            background-color: rgb(197, 246, 34);
+            overflow: hidden;   
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        p {
+            color: white;
+        }
+
+        #bugCirculo {
+            width: 100vw;
+            height: 50vh;
+            background: rgb(68, 0, 68);
+            overflow-y: hidden;
+            border-bottom-left-radius: 20%;
+            border-bottom-right-radius: 20%;
+            z-index: -1;
+        }
+
+
+        nav {
+            margin: 0 auto;
+            width: 100vw;      
+            height: 100px;
+            background: rgb(68, 0, 68);
+        }
+
+        nav .titulo {
+            position: absolute;
+            margin: 0px;
+            float: left;
+            text-align: center;
+            margin-top: 25px;
+            padding-left: 400px;
+            color: rgba(43, 206, 21, 0.829);
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 4px;  
+            font-style: italic;
+            font-size: 40px;
+        }
+
+        nav ul {
+            padding-right: 250px;
+        }
+
+        nav ul .navegacao {
+            display: block;
+            list-style-type: none;
+            padding-right: 20px;
+            float: right;
+            font-size: 20px;
+            padding: 30px 30px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            transition: 0.5s;
+            color: rgba(43, 206, 21, 0.829);
+        }
+
+        nav ul .navegacao:hover {
+            color: rgba(0, 0, 0, 0.829);
+            background-color: rgb(251, 161, 176);
+        }
+
+        .apresentacao {
+            color: orange;
+            font-size: 20px;
+        }
+
+        article {
+            width: 35vw;
+            padding-right: 10vw;
+            padding-top: 1px;
+            float: right;                   
+        }
+
+        .bordao {
+            color: rgba(43, 206, 21, 0.829);
+            font-size: 45px;
+        }
+
+        #bebiuda {
+            float: left;
+            margin-left: 15vw;
+            margin-top: 5vh; 
+        }
+
+        #bebidaDia {
+            width: 21vw;
+        }
+
+        
+        h1 {
+            padding-left: 30px;
+            font-size: 40px;
+            padding-bottom: 30px;
+        }
+
+
+        #sabores {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .bebTipo {
+            float: left;
+            margin-left: 30px;
+            margin-right: 70px;
+            margin-top: 30px;
+        }
+
+        .teste {
+            height: 16vh;
+            margin-left: 200px;
+        }
+
+        button {
+            width: 150px;
+            height: 50px;
+            background-color: rgb(95, 143, 23);
+            border: 1px solid white;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            margin-top: 20px;
+        }
+
+        button a {
+            font-size: 25px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        button:hover {
+            background-color: rgb(36, 59, 1);
+            color: pink;
+        }
+
+        figure img {
+            float: left;
+            text-align: center;
+        }
+
+        figure h2 {
+            font-family: 'Roboto', sans-serif;   
+            color: purple;
+            font-style: italic;
+            font-size: 20px;
+            padding-left: 10px;   
+        }
+
+        figure h2, button {
+            margin-left: 100px;
+        }
+
+        #saberMais{
+            text-align: center;
+        }
+
+        #descoberta {
+            width: 300px;
+            height: 140px;
+            margin: 0 0;
+            display: none;
+        }
+
+        #textoDescoberto {
+            width: 100%;
+            height: 100%;
+            font-size: 40px;
+        }
+
+        @media only screen and (max-width: 1950px) {
+            #sucoMelancia {
+            display: none;
+        }
+    }
+
+        @media only screen and (max-width: 1800px) {
+            article {
+            width: 35vw;
+            padding-right: 10vw;
+            padding-top: 1px;
+            float: right;                   
+        }
+
+    }
+
+        @media only screen and (max-width: 1500px) {
+            article {
+            width: 35vw;
+            padding-right: 10vw;
+            padding-top: 1px;
+            float: right;                   
+        }
+
+        #sucoMorango {
+            display: none
+        }
+
+            nav h1 {
+                text-align: center;
+            }
+            nav ul {
+                display: none;
+            }
+
+        }
+
+        @media only screen and (max-width: 1300px) {
+            article {
+            width: 40vw;
+            padding-right: 10vw;
+            padding-top: 1px;
+            float: right;                   
+        }
+
+        #bebidaDia {
+            width: 24vw;
+        }
+        
+        } 
+
+        @media only screen and (max-width: 1100px) {
+
+            #bugCirculo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+        }
+
+        article {
+            position: fixed;
+            text-align: center;
+            padding: 20px 0px;
+            width: 60vw;
+            height: 25vh;
+        }
+
+        .bordao {
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        #bebiuda {
+            display: none;
+        }
+
+        #façaPedido {
+            display: none;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+            height: 10vh;
+            background: black;
+            margin-top: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+       #sucoManga {
+           width: 30vw;
+       }
+    }
+
+    @media only screen and (max-width: 900px) {
+        #sucoManga {
+            width: 17.4vw;
+        }
+    }
+
+    @media only screen and (max-width: 650px) {
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        h1.titulo {
+            padding: 0;
+            text-align: center;
+            color: yellow;
+            font-size: 50px;
+        }
+
+        #bugCirculo {
+            height: 100vh;
+            border-radius: 0;
+            background-image: linear-gradient(to bottom, rgb(68, 0, 68), white);
+        }
+
+        article{
+            width: 70vw;
+            align-self: start;
+            text-align: start;
+        }
+
+        .bordao {
+            font-size: 25px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 3px;
+        }
+
+        .apresentacao {
+            height: 10vh;
+            text-align: center;
+        }
+
+        #sabores {
+            display: none;
+        }
+
+        #descoberta{
+            display: block;
+            margin-top: 170px;
+        }
+    }
+
+    @media only screen and (max-width: 375px) {
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        h1.titulo {
+            padding: 0;
+            text-align: center;
+            color: yellow;
+            font-size: 50px;
+        }
+
+        #bugCirculo {
+            height: 100vh;
+            border-radius: 0;
+            background-image: linear-gradient(to bottom, rgb(68, 0, 68), white);
+        }
+
+        article{
+            width: 100vw;
+            align-self: start;
+            text-align: start;
+        }
+
+        .bordao {
+            font-size: 25px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 3px;
+        }
+
+        .apresentacao {
+            height: 10vh;
+            text-align: center;
+        }
+
+        #sabores {
+            display: none;
+        }
+
+        #descoberta{
+            display: block;
+            margin-top: 170px;
+        }
+    }
+
+    @media only screen and (max-width: 280px) {
+        nav {
+            display: none;
+        }
+
+        #descoberta{
+            margin-top: 70vh;
+            width: 100%;
+        }
+    }
+
+
+        /*img {
+            position: absolute;
+            left: 5%;
+            bottom: 500px;
+            transform: rotate(-25deg);
+        }*/
+    </style>-->
+</head>
+<body onload="sucoDia()">
+    <nav>
+        <article class="tituloCaixa"><a class="tituloLink" href="#"><h1 class="titulo">Natural Life</h1></a></article>
+        <ul>
+            <a href="#"><li class="navegacao">Products</li></a>
+            <a href="#"><li class="navegacao">Promotions</li></a>
+            <a href="#"><li class="navegacao">Packets</li></a>
+            <a href="https://www.instagram.com/adriansilva1229/" target="_blank"><li class="navegacao">Premium</li></a>
+        </ul>
+    </nav>
+    <main>
+    <div id="bugCirculo">
+   <article>
+        <h1 class="bordao">for the best moments</h1>
+        <h2 class="apresentacao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, reprehenderit placeat ab, temporibus pariatur dolore provident vel delectus, at adipisci sed architecto nesciunt alias maiores minima expedita dolor dignissimos autem culpa nulla quo molestiae facere? Quos aut maxime placeat dolorum soluta repudiandae delectus eveniet vitae esse aliquid, neque, facere commodi.</h2>
+        <button id="façaPedido"><a href="#">Order now</a></button>
+        
+    </article>
+    <section id="saberMais">
+        <button id="descoberta"><a id="textoDescoberto" href="#">Saiba Mais >></a></button>
+    </section>
+    <figure id="bebiuda">
+        <img id="bebidaDia" alt="Bebida do dia">
+    </figure>
+    </div>
+    
+    <section id="sabores">
+        <figure id="sucoManga" class="bebTipo">
+            <img class="demonstracoes" src="imagens/mangoJuic.png">
+            <h2>Mango</h2>
+            <button><a href="#">Read more</a></button>
+        </figure>
+        <figure id="sucoLaranja" class="bebTipo">
+            <img class="demonstracoes" src="imagens/orangeJuic.png">
+            <h2 class="nomeSuco">Orange</h2>
+            <button><a href="#">Read more</a></button>
+        </figure>
+        <figure id="sucoMorango"  class="bebTipo">
+            <img class="demonstracoes" src="imagens/morangoJuice.png">
+            <h2 class="nomeSuco">Strawberry</h2>
+            <button><a href="#">Read more</a></button>
+        </figure>
+        <figure id="sucoMelancia" class="bebTipo">
+            <img class="demonstracoes" src="imagens/watermJuice.png">
+            <h2 class="nomeSuco">Watermelon</h2>
+            <button><a href="#">Read more</a></button>
+        </figure>
+    </section>
+
+        <script src="script.js"></script>
+</body>
+</html>
